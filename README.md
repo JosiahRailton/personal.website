@@ -1,3 +1,12 @@
+Created Github Repository.
+Cloned repository into visual studio code
+In terminal, ran command to create next app "npx create-next-app@latest ./ --ts --use-npm"
+Installed MUI with "npm install @mui/material @emotion/react @emotion/styled"
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
