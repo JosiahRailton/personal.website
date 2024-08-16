@@ -16,12 +16,39 @@ body {
 header {
   color: rgb(255,255,255);
   background: rgb(0,0,0);
-  height: 150px;
-  padding: 30px 50px;
+  height: 100px;
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav .socialIcons {
+  margin-left: 10px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
+}
+
+nav{
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .socialIcons a {
+  margin: 0 5px;
+}
+
+nav a {
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
 }
 
 @layer utilities {
