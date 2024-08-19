@@ -4,7 +4,10 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function Header() {
   return (
     <div className="header">
-      <h1>Josiah Railton Header</h1><nav>
+      <a href="../">
+        <h1>Josiah Railton</h1>
+      </a>
+      <nav>
         <div className="navLinks">
           <a href="../">Home</a>
           <a href="../About">About</a>
