@@ -1,5 +1,6 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -9,13 +10,13 @@ export default function Header() {
       </a>
       <nav>
         <div className="navLinks">
-          <a href="../">Home</a>
-          <a href="../About">About</a>
-          <a href="../Contact">Contact</a>
+          <Link href="../">Home</Link>
+          <Link href="../About">About</Link>
+          <Link href="../Contact">Contact</Link>
         </div>
         <div className="socialIcons">
-          <a href="https://www.linkedin.com/in/josiah-railton-jrailton222" target="_blank" rel="noopener noreferrer"><LinkedInIcon></LinkedInIcon></a>
-          <a href="https://github.com/JosiahRailton" target="_blank" rel="noopener noreferrer"><GitHubIcon></GitHubIcon></a>
+          <Link href="https://www.linkedin.com/in/josiah-railton-jrailton222" target="_blank" rel="noopener noreferrer"><LinkedInIcon></LinkedInIcon></Link>
+          <Link href="https://github.com/JosiahRailton" target="_blank" rel="noopener noreferrer"><GitHubIcon></GitHubIcon></Link>
         </div>
       </nav>
     </div>
