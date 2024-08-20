@@ -6,8 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --hero-color: rgba(208, 112, 196, 0.6);
-  --hero-alt-color: rgba(74, 181, 210, 0.6);
+  --main-color: rgba(208, 112, 196, 0.6);
+  --alt-color: rgba(74, 181, 210, 0.6);
   /*Alternate Options:
     rgba(175, 58, 161, 0.6)
     rgba(208, 112, 196, 0.6)
@@ -23,7 +23,7 @@ body {
   color: rgb(255,255,255);
   background: rgb(0,0,0);
   height: 100px;
-  padding: 30px 30px;
+  padding: 30px 30px 30px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -63,9 +63,8 @@ nav a {
   rgba(255, 255, 255, 1),
   transparent),
   linear-gradient(135deg,
-  var(--hero-color),
-  var(--hero-alt-color)), 
-  
+  var(--main-color),
+  var(--alt-color)), 
     url("../public/HexHero.png");
   min-height: 420px;
 }
@@ -76,7 +75,6 @@ nav a {
   border-bottom: 5px solid rgba(175, 58, 161, 1);
   width: 50%;
   margin-bottom: 20px;
-  
 }
 
 #heroText {
@@ -92,6 +90,42 @@ nav a {
 
 #heroDescription {
   font-size: 28px;
+}
+
+#skills {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#skills h2 {
+  font-size: 30px;
+  color: black;
+  border-bottom: 5px solid rgba(175, 58, 161, 1);
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+#skillsDescription {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#skillsDisplay-flex {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#skillsDisplay-flex div{
+  background-color: var(--main-color);
+  margin: 10px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 5px;
+  box-shadow: -1px 1px 3px rgb(0, 0, 0, .75);
 }
 
 @layer utilities {
