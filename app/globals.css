@@ -20,12 +20,27 @@ body {
 }
 
 .header {
+  /* -webkit-sticky added for Safari support */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   color: rgb(255,255,255);
   background: rgb(0,0,0);
   height: 100px;
   padding: 30px 30px 30px 50px;
   display: flex;
   justify-content: space-between;
+}
+
+.footer {
+  color: rgb(255,255,255);
+  background: rgb(0,0,0);
+  font-size: 12px;
+  height: 35px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav div {
