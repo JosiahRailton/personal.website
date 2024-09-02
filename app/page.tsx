@@ -19,19 +19,19 @@ interface ImageData {
 
 // Image data array
 const project1Images: ImageData[] = [
-  { src: project1Image1,},
-  { src: project1Image2,},
-  { src: project1Image3,},
+  { src: project1Image1, },
+  { src: project1Image2, },
+  { src: project1Image3, },
 ];
 
 const project2Images: ImageData[] = [
-  { src: project2Image1,},
-  { src: project2Image2,},
+  { src: project2Image1, },
+  { src: project2Image2, },
 ];
 
 const project3Images: ImageData[] = [
-  { src: project3Image1,},
-  { src: project3Image2,},
+  { src: project3Image1, },
+  { src: project3Image2, },
 ];
 
 export default function Home() {
@@ -40,8 +40,8 @@ export default function Home() {
       <div className="heroBanner">
         <div id="heroText">
           <p id="heroTitle"> Full-Stack Developer</p>
-          <p id="heroDescription"> Simple solutions for intricate problems 
-          without sacrificing quality</p>
+          <p id="heroDescription"> Simple solutions for intricate problems
+            without sacrificing quality</p>
         </div>
       </div>
       <div>
@@ -72,10 +72,10 @@ export default function Home() {
                 and Huntington University students for a senior project.
                 We developed a web application to help film students and
                 professionals generate call sheets to optimize the management
-                of film projects. Users upload film script files and the 
-                application parses the file and organizes the needed data 
-                in a user-friendly way. I worked on both the front-end and 
-                back-end but focused primarily on the back-end. 
+                of film projects. Users upload film script files and the
+                application parses the file and organizes the needed data
+                in a user-friendly way. I worked on both the front-end and
+                back-end but focused primarily on the back-end.
               </p>
             </div>
             <div className="skillsDisplay-flex">
@@ -90,20 +90,20 @@ export default function Home() {
               <div> REST APIs </div>
               <div> Agile </div>
             </div>
-            <div className="projectSlides"> 
-              <ImageSlides imageList={project1Images}/>
+            <div className="projectSlides">
+              <ImageSlides imageList={project1Images} />
             </div>
           </div>
-          <Divider className="projectDivider" variant="middle"/>
+          <Divider className="projectDivider" variant="middle" />
           <div className="projects">
             <div className="projectDescription">
               <h3> Class Schedule Application </h3>
               <p>
-                I developed a web application with two other students at 
-                Bethel University to help Bethel students plan class 
-                schedules. Users plan schedules for each year at Bethel 
-                according to the master schedule of when classes are offered. 
-                I worked mostly on the back-end with database design and 
+                I developed a web application with two other students at
+                Bethel University to help Bethel students plan class
+                schedules. Users plan schedules for each year at Bethel
+                according to the master schedule of when classes are offered.
+                I worked mostly on the back-end with database design and
                 implementation.
               </p>
             </div>
@@ -116,22 +116,22 @@ export default function Home() {
               <div> Database Design </div>
               <div> Agile </div>
             </div>
-            <div className="projectSlides"> 
-              <ImageSlides imageList={project2Images}/>
+            <div className="projectSlides">
+              <ImageSlides imageList={project2Images} />
             </div>
           </div>
-          <Divider className="projectDivider" variant="middle"/>
+          <Divider className="projectDivider" variant="middle" />
           <div className="projects">
             <div className="projectDescription">
               <h3> Roundnet Rating Application </h3>
               <p>
-                This was a personal hobby project I created to track games of 
-                Roundnet, commonly known as Spikeball, and rate players and 
-                teams accordingly. To accurately rate the players and teams I 
-                created a custom Elo formula, similar to how Chess ratings 
-                are generally calculated. This project was developed with 
-                Python and I mostly focused on the back-end. I am in the 
-                process of creating a web application with a better user 
+                This was a personal hobby project I created to track games of
+                Roundnet, commonly known as Spikeball, and rate players and
+                teams accordingly. To accurately rate the players and teams I
+                created a custom Elo formula, similar to how Chess ratings
+                are generally calculated. This project was developed with
+                Python and I mostly focused on the back-end. I am in the
+                process of creating a web application with a better user
                 interface to possibly deploy for public use.
               </p>
             </div>
@@ -140,14 +140,10 @@ export default function Home() {
               <div> MySQL </div>
               <div> Database Design </div>
             </div>
-            <div className="projectSlides"> 
-              <ImageSlides imageList={project3Images}/>
+            <div className="projectSlides">
+              <ImageSlides imageList={project3Images} />
             </div>
           </div>
-        </div>
-        <div id="resume">
-          <h2> Resume </h2>
-          <p> Download my resume here</p>
         </div>
         <p>More info down here</p>
       </div>

@@ -12,6 +12,7 @@ export default function Header() {
         <div className="navLinks">
           <Link href="../">Home</Link>
           <Link href="../About">About</Link>
+          <Link href="../Resume">Resume</Link>
           <Link href="../Contact">Contact</Link>
         </div>
         <div className="socialIcons">

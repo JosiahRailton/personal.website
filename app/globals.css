@@ -143,7 +143,7 @@ nav a {
   grid-column: 1;
 }
 
-#projectArea h2 {
+h2 {
   font-size: 30px;
   text-align: center;
 }
@@ -285,6 +285,50 @@ nav a {
   justify-content: center;
   align-items: center;
 }
+
+#resume {
+  padding: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resume iframe {
+  aspect-ratio: 8.5 / 11;
+  max-width: 850px;
+  width: 70%;
+  height: auto;
+}
+
+#resumeDownload {
+  background-color: rgb(146, 115, 12);
+  color: white;
+  border-radius: 5px;
+  padding: 20px;
+  max-height: fit-content;
+  margin-bottom: 30px;
+}
+
+#resumeDownload:hover{
+  background-color: rgb(184, 148, 31);
+  transition: .5s ease;
+}
+
+/* Update resume section later
+.resumeDiv1 {
+  margin: 20px 0px;
+  padding: 10px;
+  display: flex;
+}
+
+.resumeDiv2 {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+*/
+
 
 @layer utilities {
   .text-balance {
