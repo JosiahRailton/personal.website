@@ -6,12 +6,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --main-color: rgba(208, 112, 196, 0.6);
-  --alt-color: rgba(74, 181, 210, 0.6);
-  /*Alternate Options:
-    rgba(175, 58, 161, 0.6)
-    rgba(208, 112, 196, 0.6)
-  */
+
+  /* Possible colors */
+  --hero1: rgb(85, 101, 122, .3);
+  --hero2: rgba(159, 120, 51, .3);
+  --main1: rgb(171, 120, 33);
+  --main2: rgb(233, 227, 212);
+  --alt1:  rgb(24, 120, 129);
+  --alt2: rgb(44, 140, 149);
 }
 
 #page {
@@ -25,8 +27,8 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-end-rgb));
+  color: black;
+  background: white;
 }
 
 .header {
@@ -95,8 +97,8 @@ nav a {
   rgba(255, 255, 255, 1),
   transparent),
   linear-gradient(135deg,
-  var(--main-color),
-  var(--alt-color)), 
+  var(--hero1),
+  var(--hero2)), 
     url("../public/HexHero.png");
   min-height: 420px;
 }
@@ -104,7 +106,7 @@ nav a {
 #heroTitle {
   font-size: 42px;
   color: black;
-  border-bottom: 5px solid rgba(175, 58, 161, 1);
+  border-bottom: 5px solid var(--main1);
   width: 50%;
   margin-bottom: 20px;
 }
@@ -133,7 +135,7 @@ nav a {
 #skills h2 {
   font-size: 30px;
   color: black;
-  border-bottom: 5px solid rgba(175, 58, 161, 1);
+  border-bottom: 5px solid var(--main1);
   width: 75%;
   margin-bottom: 20px;
 }
@@ -160,7 +162,7 @@ h2 {
 .projects h3 {
   font-size: 24px;
   color: black;
-  border-bottom: 2px solid rgba(175, 58, 161, 1);
+  border-bottom: 2px solid var(--main1);
   width: 75%;
   margin-bottom: 20px;
 }
@@ -182,7 +184,7 @@ h2 {
 }
 
 .skillsDisplay-flex div{
-  background-color: var(--main-color);
+  background-color: var(--main2);
   font-size: 14px;
   margin: 5px;
   padding: 10px;
@@ -301,16 +303,17 @@ h2 {
 }
 
 #resumeDownload {
-  background-color: rgb(146, 115, 12);
+  background-color: var(--alt1);
   color: white;
   border-radius: 5px;
   padding: 20px;
   max-height: fit-content;
   margin-bottom: 30px;
+  transition: .5s ease;
 }
 
 #resumeDownload:hover{
-  background-color: rgb(184, 148, 31);
+  background-color: var(--alt2);
   transition: .5s ease;
 }
 
